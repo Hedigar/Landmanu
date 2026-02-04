@@ -61,12 +61,18 @@ export default function Home() {
 
         <div className="container mx-auto relative z-10">
           <div className={`max-w-3xl transition-all duration-1000 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
+            <div className="inline-block bg-primary/10 border border-primary/30 px-4 py-2 rounded-sm mb-6">
+              <span className="font-mono text-sm text-primary font-bold">
+                <i className="fas fa-check-circle mr-2"></i>
+                30 ANOS EM OSÓRIO - RS
+              </span>
+            </div>
             <h2 className="font-display text-4xl md:text-6xl lg:text-7xl mb-6 text-shadow-strong leading-tight uppercase">
-              Atendimento rápido para <br />
-              <span className="text-primary neon-glow-red">casa e empresa.</span>
+              Soluções em TI para <br />
+              <span className="text-primary neon-glow-red">seu negócio.</span>
             </h2>
             <p className="text-foreground/90 text-lg md:text-2xl mb-10 text-shadow-strong max-w-2xl font-medium">
-                            Computadores, notebooks, impressoras e redes - Atendemos Osório e região.
+                            Gestão de infraestrutura, estações de trabalho e redes - Atendemos Osório e região.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <a href={whatsappLink} target="_blank" rel="noopener noreferrer">
@@ -91,14 +97,14 @@ export default function Home() {
       </section>
 
       {/* Services Grid */}
-      <section id="servicos" className="py-32 bg-card/50 relative diagonal-cut-top scroll-mt-24 sm:scroll-mt-28">
+      <section id="servicos" className="pt-48 pb-32 bg-card/50 relative diagonal-cut-top scroll-mt-24 sm:scroll-mt-28">
         <div className="absolute inset-0 hexagon-pattern"></div>
-        <div className="container mx-auto relative z-10">
-          <h2 className="font-display text-4xl md:text-6xl text-center mb-6 uppercase">
+        <div className="container mx-auto relative z-20">
+          <h2 className="font-display text-4xl md:text-6xl text-center mb-6 uppercase relative z-30">
             NOSSOS <span className="text-primary neon-glow-red">SERVIÇOS</span>
           </h2>
           <p className="text-center text-foreground text-lg mb-16 max-w-2xl mx-auto">
-            Soluções completas em tecnologia para usuários domésticos, gamers e empresas
+            Infraestrutura e suporte técnico especializado para otimizar sua produtividade
           </p>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -106,29 +112,29 @@ export default function Home() {
             <Card className="card-cyberpunk p-8 rounded-sm relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-3xl group-hover:bg-primary/20 transition-all"></div>
               <i className="fas fa-store text-5xl text-primary mb-6 relative z-10"></i>
-              <h3 className="font-display text-2xl font-bold mb-4 relative z-10">Precisa de cabo, adaptador ou periférico?</h3>
+              <h3 className="font-display text-2xl font-bold mb-4 relative z-10">Suprimentos de TI e Periféricos</h3>
               <p className="text-foreground relative z-10 leading-relaxed">
-                Temos cabos, adaptadores, teclados, mouses e peças para resolver rapidamente o que está faltando no seu setup.
+                Cabos, adaptadores, e componentes essenciais para manter sua infraestrutura operando sem interrupções.
               </p>
             </Card>
 
-            {/* PCs Gamers */}
+            {/* PCs Gamers -> Workstations */}
             <Card className="card-cyberpunk p-8 rounded-sm relative overflow-hidden group bg-primary/5">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-3xl group-hover:bg-primary/20 transition-all"></div>
-              <i className="fas fa-gamepad text-5xl text-primary mb-6 relative z-10"></i>
-              <h3 className="font-display text-2xl font-bold mb-4 relative z-10">Baixo desempenho em jogos</h3>
+              <i className="fas fa-microchip text-5xl text-primary mb-6 relative z-10"></i>
+              <h3 className="font-display text-2xl font-bold mb-4 relative z-10">Performance e Workstations</h3>
               <p className="text-foreground/80 relative z-10 leading-relaxed">
-                Otimizamos e fazemos upgrade para seu PC rodar melhor: mais FPS, menor travamento e configuração ideal para seu objetivo.
+                Otimização de hardware e upgrades para estações de trabalho de alto desempenho e renderização.
               </p>
             </Card>
 
-            {/* Computadores Domésticos */}
+            {/* Computadores Domésticos -> Manutenção */}
             <Card className="card-cyberpunk p-8 rounded-sm relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 blur-3xl group-hover:bg-accent/20 transition-all"></div>
               <i className="fas fa-desktop text-5xl text-accent mb-6 relative z-10"></i>
-              <h3 className="font-display text-2xl font-bold mb-4 relative z-10">Computador lento ou travando</h3>
+              <h3 className="font-display text-2xl font-bold mb-4 relative z-10">Manutenção de Estações</h3>
               <p className="text-foreground relative z-10 leading-relaxed">
-                Formatação e limpeza, remoção de vírus, upgrade de RAM e SSD para estudos e trabalho sem interrupções.
+                Diagnóstico técnico, otimização de sistemas e segurança da informação para continuidade do seu negócio.
               </p>
             </Card>
 
@@ -146,9 +152,9 @@ export default function Home() {
             <Card className="card-cyberpunk p-8 rounded-sm relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-primary/10 blur-3xl group-hover:bg-primary/20 transition-all"></div>
               <i className="fas fa-network-wired text-5xl text-primary mb-6 relative z-10"></i>
-              <h3 className="font-display text-2xl font-bold mb-4 relative z-10">Wi‑Fi fraco, caindo ou internet lenta</h3>
+              <h3 className="font-display text-2xl font-bold mb-4 relative z-10">Conectividade e Redes</h3>
               <p className="text-foreground relative z-10 leading-relaxed">
-                Configuração de roteador, otimização de rede e ampliação de cobertura para conexão estável em toda a casa ou empresa.
+                Infraestrutura de rede cabeada e sem fio, garantindo estabilidade e velocidade para seu ambiente corporativo.
               </p>
             </Card>
 
@@ -156,9 +162,9 @@ export default function Home() {
             <Card className="card-cyberpunk p-8 rounded-sm relative overflow-hidden group">
               <div className="absolute top-0 right-0 w-32 h-32 bg-accent/10 blur-3xl group-hover:bg-accent/20 transition-all"></div>
               <i className="fas fa-print text-5xl text-accent mb-6 relative z-10"></i>
-              <h3 className="font-display text-2xl font-bold mb-4 relative z-10">Impressora não imprime</h3>
+              <h3 className="font-display text-2xl font-bold mb-4 relative z-10">Soluções em Impressão</h3>
               <p className="text-foreground relative z-10 leading-relaxed">
-                Instalação de drivers, configuração de rede, manutenção e recarga para voltar a imprimir sem dor de cabeça.
+                Configuração e manutenção de impressoras e periféricos de escritório para manter seu fluxo de trabalho.
               </p>
             </Card>
           </div>
@@ -188,11 +194,11 @@ export default function Home() {
         </h2>
 
         <p className="text-foreground text-lg mb-4 leading-relaxed">
-          <strong>Acabou o cabo? Mouse pifou? Precisa de uma FONTE urgente?</strong>
+          <strong>Falha em equipamentos críticos? Precisa de reposição imediata?</strong>
         </p>
         
         <p className="text-foreground/90 text-base mb-8 leading-relaxed">
-          Nossa loja física tem estoque de periféricos, componentes e acessórios. 
+          Nossa loja física mantém estoque estratégico de componentes e acessórios para garantir a continuidade do seu trabalho.
         </p>
 
         {/* Cards de categorias */}
@@ -203,10 +209,9 @@ export default function Home() {
               <i className="fas fa-keyboard text-accent text-2xl"></i>
             </div>
             <div className="flex-1">
-              <h4 className="font-bold mb-2 text-foreground">Periféricos Gamers & Profissionais</h4>
+              <h4 className="font-bold mb-2 text-foreground">Periféricos de Alta Performance</h4>
               <p className="text-sm text-foreground/80 leading-relaxed">
-                Teclados desde modelos mais basicos até mais avançados, uma ampla varidade de mouses para todos os gostos ou necessidades, 
-                headsets com cancelamento de ruído.
+                Teclados mecânicos e ergonômicos, mouses de alta precisão e headsets com cancelamento de ruído para comunicação profissional.
               </p>
               <div className="flex flex-wrap gap-2 mt-3">
                 <span className="font-mono text-xs bg-accent/10 px-2 py-1 rounded">Logitech</span>
@@ -374,8 +379,8 @@ export default function Home() {
         </div>
 
         <h2 className="font-display text-4xl md:text-6xl mb-6 uppercase leading-tight">
-          SEU PC GAMER <br/>
-          <span className="text-primary neon-glow-red">NÃO VAI TRAVAR</span>
+          SUA WORKSTATION <br/>
+          <span className="text-primary neon-glow-red">NÃO VAI PARAR</span>
         </h2>
 
         <div className="bg-background/50 border-l-4 border-primary p-4 mb-6">
@@ -518,7 +523,7 @@ export default function Home() {
         <div className="absolute inset-0 bg-gradient-to-r from-transparent to-background/80 lg:to-background/60 z-10"></div>
         <img 
           src="/images/technician-workspace.png" 
-          alt="Técnico de Informática em Osório - Atendimento Residencial e Empresarial" 
+          alt="Técnico de Infraestrutura de TI em Osório - Suporte Corporativo" 
           className="w-full h-full object-cover"
         />
         
@@ -553,31 +558,31 @@ export default function Home() {
         
         <div className="inline-block bg-primary/10 border border-primary/30 px-4 py-2 rounded-sm mb-6">
           <span className="font-mono text-sm text-primary">
-            <i className="fas fa-home mr-2"></i>
-            VAMOS ATÉ VOCÊ - OSÓRIO E REGIÃO
+            <i className="fas fa-map-marker-alt mr-2"></i>
+            ATENDIMENTO LOCAL - OSÓRIO E REGIÃO
           </span>
         </div>
 
         <h2 className="font-display text-3xl md:text-5xl mb-6 uppercase leading-tight">
-          SEU PC TRAVOU? <br/>
-          <span className="text-primary neon-glow-red">NÓS RESOLVEMOS</span>
+          INFRAESTRUTURA <br/>
+          <span className="text-primary neon-glow-red">E SUPORTE</span>
         </h2>
 
         <p className="text-foreground text-lg mb-4 leading-relaxed font-bold">
-          Atendimento técnico residencial e empresarial sem enrolação.
+          Suporte técnico especializado para seu ambiente de trabalho.
         </p>
 
         <p className="text-foreground/90 text-base mb-8 leading-relaxed">
-          Seu computador travando, internet lenta, impressora com erro, backup não funciona? 
-          Nós vamos até sua casa ou empresa, diagnóstico o problema e resolvo na hora quando 
-          possível. Sem surpresas no orçamento, sem levar seu equipamento embora "para análise".
+          Estações com lentidão, falhas de conectividade ou problemas de segurança? 
+          Nossa equipe realiza diagnóstico preciso e resolução ágil no local. 
+          Transparência total no orçamento e foco na continuidade das suas atividades.
         </p>
 
         {/* Serviços em formato diferenciado */}
         <div className="mb-8 space-y-3">
           <p className="font-bold text-sm text-primary uppercase tracking-wider mb-4">
             <i className="fas fa-wrench mr-2"></i>
-            O QUE EU RESOLVO:
+            ESCOPO DE ATUAÇÃO:
           </p>
 
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-3">
@@ -586,9 +591,9 @@ export default function Home() {
               <div className="flex items-start gap-3">
                 <i className="fas fa-laptop text-primary text-lg mt-1"></i>
                 <div>
-                  <p className="font-bold text-sm mb-1">Notebooks & PCs</p>
+                  <p className="font-bold text-sm mb-1">Estações de Trabalho</p>
                   <p className="text-xs text-foreground/70 leading-relaxed">
-                    Lentidão, instalação de software, licenças, periféricos, consultoria técnica
+                    Otimização de performance, licenciamento e consultoria técnica.
                   </p>
                 </div>
               </div>
@@ -599,9 +604,9 @@ export default function Home() {
               <div className="flex items-start gap-3">
                 <i className="fas fa-wifi text-primary text-lg mt-1"></i>
                 <div>
-                  <p className="font-bold text-sm mb-1">Internet & Wi-Fi</p>
+                  <p className="font-bold text-sm mb-1">Conectividade</p>
                   <p className="text-xs text-foreground/70 leading-relaxed">
-                    Wi-Fi lento, sem sinal em cômodos, configuração de roteador, rede cabeada
+                    Diagnóstico de cobertura, estruturação de redes e estabilidade de sinal.
                   </p>
                 </div>
               </div>
@@ -612,9 +617,9 @@ export default function Home() {
               <div className="flex items-start gap-3">
                 <i className="fas fa-hdd text-primary text-lg mt-1"></i>
                 <div>
-                  <p className="font-bold text-sm mb-1">Backup & Recuperação</p>
+                  <p className="font-bold text-sm mb-1">Segurança da Informação</p>
                   <p className="text-xs text-foreground/70 leading-relaxed">
-                    Configuração automática, recuperação de arquivos, migração de dados
+                    Políticas de backup, recuperação de dados e proteção de ativos digitais.
                   </p>
                 </div>
               </div>
@@ -625,9 +630,9 @@ export default function Home() {
               <div className="flex items-start gap-3">
                 <i className="fas fa-print text-primary text-lg mt-1"></i>
                 <div>
-                  <p className="font-bold text-sm mb-1">Impressoras</p>
+                  <p className="font-bold text-sm mb-1">Gestão de Impressão</p>
                   <p className="text-xs text-foreground/70 leading-relaxed">
-                    Não imprime, erro de driver, configuração em rede, instalação
+                    Configuração de rede, drivers e manutenção de periféricos de impressão.
                   </p>
                 </div>
               </div>
@@ -655,24 +660,24 @@ export default function Home() {
         <div className="bg-gradient-to-r from-primary/10 to-transparent border border-primary/20 p-5 rounded-sm mb-8">
           <p className="font-bold text-sm mb-3 text-primary">
             <i className="fas fa-certificate mr-2"></i>
-            COMO FUNCIONA O ATENDIMENTO:
+            FLUXO DE ATENDIMENTO:
           </p>
           <div className="space-y-2">
             <div className="flex items-start gap-3">
               <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">1</div>
-              <p className="text-sm text-foreground/90">Você entra em contato pelo WhatsApp descrevendo o problema</p>
+              <p className="text-sm text-foreground/90">Contato inicial e triagem técnica via WhatsApp</p>
             </div>
             <div className="flex items-start gap-3">
               <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">2</div>
-              <p className="text-sm text-foreground/90">Agendo visita para o mesmo dia ou no dia seguinte</p>
+              <p className="text-sm text-foreground/90">Agendamento técnico prioritário</p>
             </div>
             <div className="flex items-start gap-3">
               <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">3</div>
-              <p className="text-sm text-foreground/90">É feito diagnóstico no local e passo orçamento ANTES de fazer qualquer coisa</p>
+              <p className="text-sm text-foreground/90">Diagnóstico in-loco e orçamento detalhado</p>
             </div>
             <div className="flex items-start gap-3">
               <div className="bg-primary text-primary-foreground rounded-full w-6 h-6 flex items-center justify-center text-xs font-bold flex-shrink-0 mt-0.5">4</div>
-              <p className="text-sm text-foreground/90">Resolvemos o problema (maioria dos casos na mesma visita)</p>
+              <p className="text-sm text-foreground/90">Execução e validação dos serviços</p>
             </div>
           </div>
         </div>
@@ -700,7 +705,7 @@ export default function Home() {
           <a href={whatsappLinkPhone} target="_blank" rel="noopener noreferrer">
             <Button className="w-full bg-primary hover:bg-primary/90 text-primary-foreground px-8 py-6 text-lg font-black rounded-sm transition-all hover:shadow-lg hover:shadow-primary/50 hover:scale-105">
               <i className="fab fa-whatsapp mr-3 text-2xl"></i>
-              CHAMAR TÉCNICO AGORA
+              SOLICITAR SUPORTE TÉCNICO
             </Button>
           </a>
            <a href="#localizacao" className="flex-1">
@@ -732,7 +737,7 @@ export default function Home() {
             <p className="text-sm font-bold text-foreground">
               <span className="text-primary">+200</span> atendimentos em 2025
             </p>
-            <p className="text-xs text-foreground/70 font-mono">Residências e empresas em Osório</p>
+            <p className="text-xs text-foreground/70 font-mono">Atendimentos em Osório e Região</p>
           </div>
         </div>
 
@@ -957,6 +962,9 @@ export default function Home() {
           </div>
           <p className="text-muted-foreground text-xs mt-8">
             © {new Date().getFullYear()} Myranda Informática. Todos os direitos reservados.
+          </p>
+          <p className="text-muted-foreground text-[10px] mt-2 opacity-50 font-mono">
+            CNPJ: 13.558.678/0001-36
           </p>
         </div>
       </footer>
