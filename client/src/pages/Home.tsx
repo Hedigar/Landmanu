@@ -166,7 +166,7 @@ export default function Home() {
       </section>
 
 {/* Store Section - Versão Melhorada */}
-<section className="py-32 bg-card/30 relative diagonal-cut-top diagonal-cut-bottom">
+<section id="loja" className="py-32 bg-card/30 relative diagonal-cut-top diagonal-cut-bottom scroll-mt-24">
   <div className="absolute inset-0 hexagon-pattern opacity-30"></div>
   
   <div className="container mx-auto relative z-10">
@@ -343,7 +343,7 @@ export default function Home() {
 
 
       {/* Gaming Section - Versão Melhorada */}
-<section className="py-32 bg-background relative overflow-hidden">
+<section id="pc-gamer" className="py-32 bg-background relative overflow-hidden scroll-mt-24">
   {/* Efeito de fundo */}
   <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-transparent to-primary/10"></div>
   
@@ -506,7 +506,7 @@ export default function Home() {
      
 
    {/* Technical Support Section - Versão Melhorada */}
-<section className="py-32 bg-background relative overflow-hidden">
+<section id="suporte" className="py-32 bg-background relative overflow-hidden scroll-mt-24">
   {/* Efeito de fundo */}
   <div className="absolute inset-0 bg-gradient-to-b from-primary/5 via-transparent to-primary/5"></div>
   
@@ -743,7 +743,7 @@ export default function Home() {
 </section>
 
       {/* Business Section */}
-      <section className="py-32 bg-card/30 relative diagonal-cut-top overflow-hidden">
+      <section id="empresas" className="py-32 bg-card/30 relative diagonal-cut-top overflow-hidden scroll-mt-24">
         <div className="absolute inset-0 hexagon-pattern opacity-20"></div>
         
         <div className="container mx-auto relative z-10">
@@ -904,7 +904,7 @@ export default function Home() {
         </div>
       </section>
 
-      <section id="localizacao" className="py-24 bg-card/40 relative">
+      <section id="localizacao" className="py-24 bg-card/40 relative scroll-mt-24">
   <div className="container mx-auto">
     <h2 className="font-display text-4xl md:text-5xl mb-6 uppercase">
       <span className="text-accent">Localização</span>
@@ -937,7 +937,7 @@ export default function Home() {
 </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-card border-t border-border text-center">
+      <footer id="contato" className="py-12 bg-card border-t border-border text-center scroll-mt-24">
         <div className="container mx-auto">
           <h3 className="font-display text-2xl mb-4">
             MYRANDA<span className="text-primary">_</span>
